@@ -46,7 +46,7 @@ client.on("message", message => {
           let cleanlink = link.split("?")[0]
           let partarr = cleanlink.split("/")
           cleanlink = partarr.slice(0,3).join("/")
-          exampleEmbed.addField(variant.title, "[ATC]("+cleanlink +"/cart/"+variant.id+":1)\n$"+variant.price+"\nWeight: "+variant.weight+" "+variant["weight_unit"]+"\nsku: "+variant.sku, true)
+          exampleEmbed.addField(variant.title, "[ATC]("+cleanlink +"/cart/"+variant.id+":1)\n$"+variant.price+"\nWeight: "+variant.weight+" "+variant["weight_unit"], true)
 
         })
         message.channel.send(exampleEmbed)
